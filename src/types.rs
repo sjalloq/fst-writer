@@ -23,7 +23,7 @@ pub struct FstInfo {
     pub file_type: FstFileType,
 }
 
-#[derive(Debug, Copy, Clone)]
+#[derive(Debug, Copy, Clone, Ord, PartialOrd, Eq, PartialEq, Hash)]
 pub struct FstSignalId(NonZeroU32);
 
 impl FstSignalId {
