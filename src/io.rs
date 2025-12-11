@@ -65,7 +65,7 @@ pub(crate) fn write_u64(output: &mut impl Write, value: u64) -> Result<()> {
     Ok(())
 }
 
-fn write_u8(output: &mut impl Write, value: u8) -> Result<()> {
+pub(crate) fn write_u8(output: &mut impl Write, value: u8) -> Result<()> {
     let buf = value.to_be_bytes();
     output.write_all(&buf)?;
     Ok(())

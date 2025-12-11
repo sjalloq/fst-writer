@@ -4,6 +4,7 @@
 
 mod buffer;
 mod io;
+pub mod raw_writer;
 mod types;
 mod writer;
 
@@ -25,3 +26,9 @@ pub enum FstWriteError {
 
 pub use types::*;
 pub use writer::{FstBodyWriter, FstHeaderWriter, open_fst};
+
+// Re-export raw writing types
+pub use raw_writer::{
+    FstRawWriter, HierarchyBuilder, SignalGeometry, VcBlockWriter, VcPackType,
+    extract_filtered_frame,
+};

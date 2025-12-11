@@ -17,6 +17,7 @@ keywords = ["fst", "waveform", "wavedump"]
 lz4_flex = "0.11"
 miniz_oxide = "0.8.2"
 thiserror = "2.0"
+rustc-hash = "2.1"
 
 [dev-dependencies]
 wellen = "0.13.8"
